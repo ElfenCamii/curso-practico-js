@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #1d1d1d;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23a7a7a7' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    color: #fff;
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.8rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+.header h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.header p{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+}
+
+
+.cuadrado{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.cuadrado h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px 0px 10px 0px;
+}
+.cuadrado input{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.cuadrado label{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 0px 0px 0px;
+    font-style: italic;
+}
+
+
+.triangulo{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.triangulo h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px 0px 10px 0px;
+}
+.triangulo input{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.triangulo label{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 0px 0px 0px;
+    font-style: italic;
+}
+
+
+.trianguloIsoceles{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.trianguloIsoceles h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px 0px 10px 0px;
+}
+.trianguloIsoceles input{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.trianguloIsoceles label{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 0px 0px 0px;
+    font-style: italic;
+}
+
+
+.circulo{
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.circulo h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px 0px 10px 0px;
+}
+.circulo input{
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.circulo label{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    padding: 10px 0px 0px 0px;
+    font-style: italic;
+}

@@ -11,25 +11,16 @@ function calcularMediaAritmetica(lista){
     return promedioLista;
 }
 
-function calcularMediana(lista1){
-    
-}
-const lista1 = [
-    100,
-    450,
-    200,
-    900,
-    500,
-    800,
-];
 
-var lista1Ordenada = lista1;
-lista1Ordenada.sort(function(a, b) {
+function calcularMediana(datos){
+    console.log("chango", datos);
+    var listaOrdenada = datos;
+    listaOrdenada.sort(function(a, b) {
   return a - b;
 });
-console.log(lista1Ordenada);
+console.log(listaOrdenada);
 
-const mitadLista1 = parseInt(lista1.length/2);
+const mitadDatos = parseInt(datos.length/2);
 
 function esPar(numerito){
     if(numerito % 2 === 0){
@@ -41,9 +32,9 @@ function esPar(numerito){
 
 let mediana;
 
-if (esPar(lista1.length)){
-    const elemento1 = lista1[mitadLista1 - 1];
-    const elemento2 = lista1[mitadLista1];
+if (esPar(datos.length)){
+    const elemento1 = datos[mitadDatos - 1];
+    const elemento2 = datos[mitadDatos];
 
     const promedioElemento1y2 = calcularMediaAritmetica([
         elemento1,
@@ -53,5 +44,13 @@ if (esPar(lista1.length)){
     mediana = promedioElemento1y2;
 
 }else{
-    mediana = lista1[mitadLista1]
+    mediana = datos[mitadDatos]
 }
+
+return "la mediana es: " + mediana;
+}
+
+
+
+
+

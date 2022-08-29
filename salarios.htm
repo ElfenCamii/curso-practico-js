@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- FONT BEBAS NEUE, MONTSERRAT, OSWALD & ROBOTO -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+ 
+     <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./salarios.css">
+    
+    <title>Salarios</title>
+</head>
+<body>
+    
+    <!-- HEADER PRINCIPAL -->
+    <header class="header">
+        <h1 class="title">Salarios</h1>
+    </header>
+
+    <!-- SALARIOS -->
+    <div class="operationArea">
+        <section class="mediana">
+            <h2>
+                Promedio
+            </h2>
+
+            <form>
+                <label for="InputName">Nombre de la persona</label><br>
+                <input id="InputName" type="text" /><br>
+    
+                <label for="InputSalary">Salario de la persona</label><br>
+                <input id="InputSalary" type="number" /><br>
+    
+                <button type="button" onclick="addInfo()">
+                    Añadir
+                </button> <br><br>
+
+                <button type="button" onclick="ButtonMedianaColGeneral()">
+                    Calcular promedio
+                </button> <br>
+    
+                <p id="ResultMediana"></p>
+                <br>
+
+                <button type="button" onclick="ButtonTop10Col()">
+                    Promedio top 10
+                </button> <br>
+                <p id="ResultTop10"></p>
+
+        </section>
+<!--         <section class="top10">
+            <h2>
+                Promedio
+            </h2>
+
+            <form>
+                <label for="InputName">Nombre de la persona</label><br>
+                <input id="InputName" type="text" /><br>
+    
+                <label for="InputSalary">Salario de la persona</label><br>
+                <input id="InputSalary" type="number" /><br>
+    
+                <button type="button" onclick="ButtonmedianaColGeneral()">
+                    Calcular promedio
+                </button> <br>
+    
+                <p id="ResultP"></p>
+
+        </section> -->
+        <section class="extras">
+
+        </section>
+    </div>
+
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #f2f2f2;
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23aaa9ab' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* HEADER PRINCIPAL */
+.header{
+    display: flex;
+    background: rgba(162, 155, 254,0.7) ;
+    font-size: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 25px;
+}
+.title{
+    color: #2d3436;
+    font-family: 'Bebas Neue';
+}
+
+/* SALARIOS */
+.operationArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+
+}
+.mediana{
+    background: rgba(116, 185, 255,0.8);
+    padding: 2rem;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 25px;
+}
+.mediana h2{
+    color: #2d3436;
+    font-size: 2rem;
+    font-family: 'Bebas Neue';
+    margin-bottom: 15px;
+}
+.mediana label{
+    color: #2d3436;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.mediana input{
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.mediana button{
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: rgba(255, 118, 117,1);
+    color: #2d3436;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+/* .top10{
+    background: rgba(255, 234, 167,0.8);
+    padding: 2rem;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 25px;
+}
+.top10 h2{
+    color: #2d3436;
+    font-size: 2rem;
+    font-family: 'Bebas Neue';
+}
+.top10 input{
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 15px;
+} */
+.extras{
+    background: rgba(255, 118, 117,0.8) ;
+    padding: 100px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px){
+    .operationArea{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mediana{
+        background: rgba(116, 185, 255,0.8) ;
+        padding: 2rem;
+        margin: 10px auto 10px 10px;
+        width: 50%;
+        border-radius: 25px;
+    }
+    /* .top10{
+        background: rgba(116, 185, 255,0.8) ;
+        padding: 2rem;
+        margin: 10px auto 10px 10px;
+        width: 50%;
+        border-radius: 25px;
+    } */
+    .extras{
+        background: rgba(255, 118, 117,0.8) ;
+        padding: 100px;
+        margin: 10px 10px auto 10px;
+        width: 50%;
+        border-radius: 25px;
+    }
+}
+@media (min-width: 800px){
+    .operationArea{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mediana{
+        background: rgba(116, 185, 255,0.8) ;
+        padding: 2rem;
+        max-width: 600px;
+        border-radius: 25px;
+    }
+    /* .top10{
+        background: rgba(116, 185, 255,0.8) ;
+        padding: 2rem;
+        max-width: 600px;
+        border-radius: 25px;
+    } */
+    .extras{
+        background: rgba(255, 118, 117,0.8) ;
+        padding: 100px;
+        max-width: 600px;
+        border-radius: 25px;
+    }
+}

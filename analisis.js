@@ -58,7 +58,56 @@ const salariosColTop10 = salariosColSorted.splice(
 
 const medianaColTop10 = medianaSalarios(salariosColTop10);
 
-console.log({
-    medianaColGeneral,
-    medianaColTop10,
-});
+// console.log({
+//     medianaColGeneral,
+//     medianaColTop10,
+// });
+
+//HORAS EXTRAS DIURNAS
+function horasExtrasDiurnas(salario, diurnas){
+    const valorHora = salario / 205;
+    const valorExtraD = 1.25 * valorHora;
+    const horasExtraD = valorExtraD * diurnas;
+    const salarioDiurnas = (salario + horasExtraD);
+
+    // console.log("Changos " + valorHora + " hola " + valorExtraD);
+    return salarioDiurnas;
+}
+
+//HORAS EXTRA NOCTURNAS
+function HorasExtrasNocturnas(salarioExtra, nocturnas){
+    const nomina = horasExtrasDiurnas();
+    
+}
+
+//HTML & JS
+function ButtonMedianaColGeneral(){
+
+    console.log("Changos");
+
+    const resultM= document.getElementById("ResultMediana");
+    resultM.innerText = "El promedio salarial en Colombia es: $" + medianaColGeneral;
+}
+
+function ButtonTop10Col(){
+
+    console.log("Re changos");
+
+    const result10= document.getElementById("ResultTop10");
+    result10.innerText = "El promedio salarial del 10% mas rico en Colombia es: $" + medianaColTop10;
+}
+
+function ButtonExtrasDiurnas(){
+    const inputQuincena = document.getElementById("InputQuincena");
+    const quincena = inputQuincena.value;
+
+    const inputExDiurnas = document.getElementById("InputExDiurnas");
+    const diurnasValue = inputExDiurnas.value;
+
+    console.log("salario " + quincena + " "  + diurnasValue);
+
+    const valorConDiurnas = horasExtrasDiurnas(quincena, diurnasValue);
+
+    const resulExDi= document.getElementById("ResultExDi");
+    resulExDi.innerText = "El salario con las horas extra diurnas es: $" + valorConDiurnas;
+}

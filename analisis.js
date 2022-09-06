@@ -65,25 +65,29 @@ const medianaColTop10 = medianaSalarios(salariosColTop10);2
 
 //HORAS EXTRAS DIURNAS
 function horasExtrasDiurnas(salario, diurnas){
+    diurnas = parseInt(diurnas);
+    salario = parseInt(salario);
     const valorHora = salario / 205;
     const valorExtraD = 1.25 * valorHora;
     const horasExtraD = valorExtraD * diurnas;
-    const salarioDiurnas = (salario + horasExtraD);
+    const salarioDiurnas = parseInt(salario + horasExtraD);
 
-    // console.log("Changos " + valorHora + " hola " + valorExtraD);
+    console.log("Changos " + valorHora + " hola " + salarioDiurnas);
     return salarioDiurnas;
 }
 
-//HORAS EXTRAS NOCTURNAS
-// function horasExtrasNocturnas(salario, nocturnas){
-//     const valorHora = salario / 205;
-//     const valorExtraN = 1.75 * valorHora;
-//     const horasExtraN = valorExtraN * nocturnas;
-//     const salarioNocturnas = (salario + horasExtraN);
+// HORAS EXTRAS NOCTURNAS
+function horasExtrasNocturnas(salario, nocturnas){
+    nocturnas = parseInt(nocturnas);
+    salario = parseInt(salario);
+    const valorHora = salario / 205;
+    const valorExtraN = 1.75 * valorHora;
+    const horasExtraN = valorExtraN * nocturnas;
+    const salarioNocturnas = parseInt(salario + horasExtraN);
 
-//     // console.log("Changos " + valorHora + " hola " + valorExtraD);
-//     return salarioNocturnas;
-// }
+    // console.log("Changos " + valorHora + " hola " + valorExtraD);
+    return salarioNocturnas;
+}
 
 //HTML & JS
 function ButtonMedianaColGeneral(){
@@ -119,24 +123,24 @@ function ButtonExtrasDiurnas(){
 }
 
 //HORAS EXTRA NOCTURNAS
-// function ButtonExtrasMocturnas(){
-//     const inputQuincena = document.getElementById("InputQuincena");
-//     const quincena = inputQuincena.value;
+function ButtonExtrasMocturnas(){
+    const inputQuincena = document.getElementById("InputQuincena");
+    const quincena = inputQuincena.value;
 
-//     const inputExDiurnas = document.getElementById("InputExDiurnas");
-//     const diurnasValue = inputExDiurnas.value;
+    const inputExDiurnas = document.getElementById("InputExDiurnas");
+    const diurnasValue = inputExDiurnas.value;
 
-//     const inputExNocturnas = document.getElementById("InputExNocturnas");
-//     const nocturnasValue = inputExNocturnas.value;
+    const inputExNocturnas = document.getElementById("InputExNocturnas");
+    const nocturnasValue = inputExNocturnas.value;
 
-//     console.log("salario " + quincena + " "  + diurnasValue);
+    console.log("salario " + quincena + " "  + diurnasValue);
 
-//     const valorConDiurnas = horasExtrasDiurnas(quincena, diurnasValue);
-//     const valorConNocturnas = horasExtrasNocturnas(quincena, nocturnasValue);
-//     const valorTotal = (valorConDiurnas + valorConNocturnas) - quincena;
+    const valorConDiurnas = horasExtrasDiurnas(quincena, diurnasValue);
+    const valorConNocturnas = horasExtrasNocturnas(quincena, nocturnasValue);
+    const valorTotal = (valorConDiurnas + valorConNocturnas) - quincena;
 
-//     console.log("salario " + quincena + " "  + valorConNocturnas);
+    console.log("salario " + quincena + " "  + valorConNocturnas);
 
-//     const resultExNc= document.getElementById("ResultExNc");
-//     resultExNc.innerText = "El salario con las horas extra nocturnas es: $" + valorTotal;
-// }
+    const resultExNc= document.getElementById("ResultExNc");
+    resultExNc.innerText = "El salario con las horas extra nocturnas es: $" + valorTotal;
+}
